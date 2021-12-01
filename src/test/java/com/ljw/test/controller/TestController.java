@@ -38,7 +38,7 @@ public class TestController {
      * 然后，我们基于 TestRestTemplate 发起了 HTTP 请求并验证了结果。
      */
     @Test
-    public void testGenerateCustomerTicket() throws Exception {
+    public void testGetById() throws Exception {
         Long userId = 1L;
         given(this.userService.findById(userId))
                 .willReturn(new User(1L, "MockBean", 44, "MockBean@qq.com"));

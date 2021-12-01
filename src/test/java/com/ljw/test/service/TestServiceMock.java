@@ -39,7 +39,7 @@ public class TestServiceMock {
      * @throws Exception
      */
     @Test
-    public void getById() throws Exception {
+    public void testGetById() throws Exception {
         Long id = 22L;
         //用Mock构建测试方法userService.findById(22L)需要的userRepository.getById(id)的数据，
         Mockito.when(userRepository.getById(id)).thenReturn(new User(22L, "MockBean", 22, "MockBean@qq.com"));

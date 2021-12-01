@@ -48,7 +48,7 @@ public class TestWebMvcTestController {
      * @throws Exception
      */
     @Test
-    public void testGenerateCustomerTicket() throws Exception {
+    public void testGetById() throws Exception {
         Long userId = 55L;
         //模拟实现
         given(this.userService.findById(userId))

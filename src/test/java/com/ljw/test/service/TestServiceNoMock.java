@@ -33,7 +33,7 @@ public class TestServiceNoMock {
      */
     @Test
     @Transactional
-    public void getById() throws Exception {
+    public void testGetById() throws Exception {
         Long id = 1L;
         User user = userService.findById(id);
         Assert.assertNotNull(user);

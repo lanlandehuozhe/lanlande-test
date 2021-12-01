@@ -33,7 +33,7 @@ public class TestDao {
      * @throws Exception
      */
     @Test
-    public void testFindCustomerTicketById() throws Exception {
+    public void testGetById() throws Exception {
         String expected = "new6@qq.com";
         User user1 = new User();
         user1.setName("new6");
